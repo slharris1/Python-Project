@@ -16,7 +16,7 @@ conn = sqlite3.connect('assignmentpy.db')
 
 fileList = ('information.docx', 'Hello.txt', 'myImage.png', \
             'myMovie.mpg', 'World.txt', 'data.pdf', 'myPhoto.jpg')
-#Variable created with desired files to iterate through 
+#Variable created with desired files to iterate through.
 
 
 
