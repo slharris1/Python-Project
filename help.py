@@ -7,6 +7,7 @@ from datetime import datetime, timedelta
 
 
 
+
 class ParentWindow(Frame):
     def __init__(self, master):
         Frame.__init__(self)
@@ -36,7 +37,13 @@ class ParentWindow(Frame):
         self.btnDestination.grid(row=2, column=2, padx=(0,0), pady=(30,0), sticky=S)  
 
         self.btnTransfer = Button(self.master, text ="Transfer", width= 10, height=2) 
-        self.btnTransfer.grid(row=2, column=1, padx=(0,0), pady=(30,0), sticky=N)  
+        self.btnTransfer.grid(row=2, column=1, padx=(0,0), pady=(30,0), sticky=N)
+
+    def chooseSource(self):
+        src = filedialog.askdirectory()
+
+    def chooseDestination(self):
+        src = filedialog.askdirectory()
 
 
 
