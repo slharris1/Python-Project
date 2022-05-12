@@ -77,6 +77,11 @@ class ParentWindow(Frame):
             if modTime > twentyFour:
                 shutil.move(absolutePath, destination)
 
+    def retrieve_input():
+        source = self.txtWeb.get('1.0',END) #input should be read from line one, char zero
+        destination = self.txtWeb2.get('1.0',END) #input should be read from line one, char zero
+        
+
 
 
 
