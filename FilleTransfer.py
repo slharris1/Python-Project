@@ -54,10 +54,8 @@ class ParentWindow(Frame):
 
 
     def fileTransfer(self):
-        #set where the source of the files are
-        source = '/Users/harri/Onedrive/Desktop/Folder C/'
-        #set the destination path to folder D
-        destination = '/Users/harri/Onedrive/Desktop/Folder D/'
+        source = self.txtWeb.get() #input should be read from line one, char zero
+        destination = self.txtWeb2.get() #input should be read from line one, char zero
         files = os.listdir(source)
 
         for i in files:
@@ -77,10 +75,6 @@ class ParentWindow(Frame):
             if modTime > twentyFour:
                 shutil.move(absolutePath, destination)
 
-    def retrieve_input():
-        source = self.txtWeb.get('1.0',END) #input should be read from line one, char zero
-        destination = self.txtWeb2.get('1.0',END) #input should be read from line one, char zero
-        
 
 
 
