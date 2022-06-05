@@ -12,9 +12,7 @@ class Account(models.Model):
         return self.first_name + '' + self.last_name
 
 
-TransactionTypes = [('Deposit', 'Deposit'),
-                    ('Withdrawal', 'Withdrawal')
-                    ]
+TransactionTypes = [('Deposit', 'Deposit'), ('Withdrawal', 'Withdrawal')]
 
 
 class Transaction(models.Model):
@@ -24,4 +22,4 @@ class Transaction(models.Model):
     description = models.CharField(max_length=500)
     account = models.ForeignKey(Account, on_delete=models.CASCADE)
 
-    Transaction = models.Manager()
+    Transactions = models.Manager()
